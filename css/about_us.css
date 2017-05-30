@@ -1,0 +1,433 @@
+/*Главные стили*/
+.container {
+    max-width: 940px;
+    min-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-md-12 {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'vegurregular';
+    -webkit-box-shadow: inset 0px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 10px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 10px 0px 0px rgba(0, 0, 0, 1);
+    padding-top: 8px;
+    overflow-x: hidden;
+}
+
+
+.footer_bg {
+    height: 70vh;
+    background: url(../image/giphy2.gif) 50% 50%/cover no-repeat;
+}
+
+.bg {
+    background: url(../image/giphy1.gif) no-repeat 50% 50%/cover fixed;
+    height: 600px;
+}
+
+.home_button {
+    position: relative;
+}
+.home {
+    position: fixed;
+    top: 2%;
+    right: 8%;
+    display: block;
+    font-size: 24px;
+    color: #67b168;
+    z-index: 234;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/************************************************************************************/
+/*Promo*/
+
+.promo {
+    background: url(../image/giphy.gif) 50% 50% repeat fixed;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.parallax_block h1 {
+    margin-top: 50%;
+    font-size: 42px;
+    color: #fff;
+} 
+.parallax_block h1 span {
+    text-transform: uppercase;
+}
+.parallax_block h2 {
+    font-size: 30px;
+    color: #fff;
+}
+.parallax_block h1 span,
+.parallax_block h2 span {
+    display: inline-block;
+    padding: 0% 5%;
+}
+
+/***************************/
+/*Cards*/
+.cards {
+    position: relative;
+    text-align: center;
+}
+.title_job {
+    text-align: center;
+}
+.title_job h3 {
+    font-size: 40px;
+    margin: 4% 0;
+}
+.block_content {
+    margin: 12% 0 5%;
+}
+.cards:before,
+.about_us:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: -100px;
+    height: 150px;
+    width: 100%;
+    background: #202326;
+    transform: skew(0deg, -4deg);
+    -webkit-transform: skew(0deg, -4deg);
+    -moz-transform: skew(0deg, -4deg);
+    -o-transform: skew(0deg, -4deg);
+    -ms-transform: skew(0deg, -4deg);
+    z-index: 1;
+}
+.cards:before {
+    background: #fff;
+}
+
+.cards:after,
+.about_us:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    height: 150px;
+    width: 100%;
+    background: #202326;
+    transform: skew(0deg, 4deg);
+    -webkit-transform: skew(0deg, 4deg);
+    -moz-transform: skew(0deg, 4deg);
+    -o-transform: skew(0deg, 4deg);
+    -ms-transform: skew(0deg, 4deg);
+    z-index: 1;
+}
+.cards:after {
+    background: #fff;
+}
+/********block****/
+.block {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1%;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin: 7% 0;
+}
+.block h4 {
+    font-size: 20px;
+    margin: 3% 0;
+}
+.circle strong {
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    padding: 10% 0 0;
+    width: 100px;
+    height: 100px;
+}
+.icon {
+    display: block;
+    font-size: 40px;
+    color: blue;
+}
+
+/***************************************************************************/
+/*about us*/
+.about_us {
+    position: relative;
+    background: #202326;
+    color: #fff;
+}
+.about_us_content {
+    margin: 18% 0;
+    padding: 0 3%
+}
+.about_us h2 {
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.about_us p {
+    font-size: 14px;
+}
+
+
+/***************************************************************************/
+/*our works*/
+.btn {
+    padding: 15px 40px;
+    color: #000;
+    border: 3px solid #202326;
+    font-size: 18px;
+}
+.btn:hover {
+    background: #202326;
+    color: #fff;
+    border-color: #202326;
+}
+.our_team {
+    position: relative;
+}
+.our_team:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    height: 150px;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, 4deg);
+    -webkit-transform: skew(0deg, 4deg);
+    -moz-transform: skew(0deg, 4deg);
+    -o-transform: skew(0deg, 4deg);
+    -ms-transform: skew(0deg, 4deg);
+    z-index: 1;
+}
+.our_team_content {
+    margin: 35% 0 15%;
+    padding: 0 3%;
+}
+.left_works {
+    margin: 15% 0 15%;
+}
+
+/*******/
+.left_works .left_block,
+.left_works .right_block {
+    float: left;
+}
+.left_works .left_block {
+    width: 95%;
+}
+.left_works .right_block {
+    width: 100%;
+    background: #000;
+    margin-top: 6%;
+}
+.left_works .right_reverse {
+    margin-right: 4%;
+    margin-left: 0;
+}
+.title_works h2 {
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.title_works h2:after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2px;
+    background: #000;
+}
+.left_block h3 {
+    font-size: 40px;
+    margin: 0 0 3%; 
+}
+.left_block p {
+    font-size: 16px;
+    margin: 1% 0 9%;
+}
+
+
+/*grafics*/
+
+.graf_blocks {
+    margin: 5% 0 10%;
+}
+.graf_blocks h3 {
+    margin: 4% 0;
+    font-size: 20px;
+}
+.main_grafic {
+    margin: 4% 0;
+}
+.col_grafics span img ,
+.main_grafic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.col_grafics span {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+
+/**********************************************************************/
+/*Media*/
+
+@media screen and (min-width: 480px) {
+    .parallax_block h1 {
+        margin-top: 43%;
+    } 
+    .circle strong {
+        padding: 6% 0 0;
+    }
+    .left_works .right_block {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .parallax_block h1 {
+        margin-top: 37%;
+    } 
+}
+
+@media screen and (min-width: 680px) {
+    .circle strong {
+        padding: 10% 0 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .bg {
+        height: 800px;
+    }
+
+    .promo {
+        height: 120vh;
+    }
+    .home {
+        top: 25%;
+        left: 1%;
+    }
+    .parallax_block h1 {
+        font-size: 70px;
+        margin-top: 30%;
+    } 
+    .parallax_block h2 {
+        font-size: 40px;
+    }
+
+    /*about us*/
+    .about_us_content {
+        margin: 10% 0;
+        padding: 0
+    }
+    .about_us h2 {
+        font-size: 24px;
+    }
+    .about_us p {
+        font-size: 18px;
+    }
+
+    /*our works*/
+
+    .our_team_content {
+        margin: 20% 0 15%;
+        filter: grayscale(5);
+    }
+    .left_works {
+        margin: 15% 0 25%;
+    }
+
+    /*******/
+
+    .left_works .left_block {
+        width: 65%;
+    }
+    .left_works .right_block {
+        width: 30%;
+        margin-left: 4%;
+    }
+    .left_works .right_reverse {
+        margin-right: 4%;
+        margin-left: 0;
+    }
+    .title_works h2 {
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+
+    .title_works h2:after {
+        content: "";
+        display: block;
+        width: 250px;
+        height: 2px;
+        background: #000;
+
+    }
+
+    .left_block h3 {
+        font-size: 40px;
+        margin: 0 0 3%; 
+    }
+    .left_block p {
+        font-size: 16px;
+        margin: 1% 0 5.5%;
+    }
+
+    /*Cards*/
+
+    .title_job h3 {
+        font-size: 40px;
+        margin: 4% 0;
+    }
+    .block_content {
+        margin: 5% 0 5%;
+    }
+
+    /********block****/
+    .block {
+        float: left;
+        width: 33%;
+        box-sizing: border-box;
+        padding: 1%;
+        position: relative;
+        margin: 0;
+    }
+
+    /*grafics*/
+
+    .col_grafics span {
+        width: 50%;
+    }
+
+ 
+}
